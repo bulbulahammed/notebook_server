@@ -4,6 +4,8 @@ const { getNotes, createNote,getNoteById,updateNote,DeleteNote} = require('../co
 const verifyJWT = require('../middlewares/verifyJWT');
 
 
+// commit to server Restart
+
 router.route('/').get(verifyJWT,getNotes);
 router.route('/create').post(verifyJWT,createNote);
 router.route('/:id').get(getNoteById)
