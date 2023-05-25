@@ -28,11 +28,6 @@ app.get('/', (req, res) => {
   res.send('Hello, From Notebook Server! ✌')
 });
 
-// TODO: Remove after test
-// app.get("/api/notes",(req,res)=>{
-//   res.json(notes);
-// })
-
 // Creating Route for users
 app.use('/api/users',userRoutes);
 // Creating Route for notes
